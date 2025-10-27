@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>CodeUnity — Home</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+</head>
+<body>
+  <header class="header">
+    <div class="container header-inner">
+      <div class="brand" onclick="location.href='index.html'">
+        <div class="logo">CU</div>
+        <div>
+          <h1>CodeUnity</h1>
+          <div style="font-size:.78rem;color:var(--muted);margin-top:3px">Code Together. Grow Together.</div>
+        </div>
+      </div>
+
+      <nav class="nav">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="mission.html">Mission</a>
+        <a href="operations.html">Operations</a>
+        <a href="team.html">Team</a>
+        <a href="join.html" class="btn ghost">Join</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container hero-inner">
+        <div class="hero-left">
+          <span class="kicker">Student-led • Mentorship • Projects</span>
+          <h2 class="h-title">Learn to build. <span class="accent">Code Together.</span><br/>Grow Together.</h2>
+          <p class="h-sub">CodeUnity empowers young learners with peer-led lessons, online projects, guest speakers, and hands-on workshops. Join a community where coders become changemakers.</p>
+          <div class="cta-row">
+            <button class="btn" onclick="location.href='join.html'">Get Started — Join</button>
+            <a class="btn ghost" href="operations.html">Our Programs</a>
+          </div>
+        </div>
+
+        <div class="hero-art card">
+          <div class="code-card">
+<pre style="white-space:pre-wrap;">
+// Welcome to CodeUnity
+function welcome(name){
+  return `Hello ${name}, let's build something that matters.`;
+}
+</pre>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <h2>What we do</h2>
+        <div class="card content">
+          <p>We run online programs, in-person workshops, mentorship, and community partnerships. Our students design projects, lead lessons, and present their work — all while learning collaboration, ethics, and critical thinking alongside code.</p>
+          <p>Programs are accessible, flexible, and designed to prepare students for real-world tech work and community impact.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <h2>Quick links</h2>
+        <div style="display:flex;gap:1rem;flex-wrap:wrap;margin-top:1rem">
+          <a class="card" href="operations.html" style="padding:1rem">Operations</a>
+          <a class="card" href="online-program.html" style="padding:1rem">Online Program</a>
+          <a class="card" href="team.html" style="padding:1rem">Meet the Team</a>
+          <a class="card" href="join.html" style="padding:1rem">Join Us</a>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer container">
+      <div>© <strong>CodeUnity</strong> — Code Together. Grow Together.</div>
+      <div style="color:var(--muted)">Questions? <a href="contact.html">Contact us</a></div>
+    </footer>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
