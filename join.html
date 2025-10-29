@@ -1,52 +1,42 @@
-<!doctype html>
+<!-- join.html -->
+<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Join — CodeUnity</title>
-  <link rel="stylesheet" href="style.css">
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Join Us | CodeUnity</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="script.js" defer></script>
 </head>
 <body>
-  <header class="header">
-    <div class="container header-inner">
-      <div class="brand" onclick="location.href='index.html'"><div class="logo">CU</div><div><h1>CodeUnity</h1></div></div>
-      <nav class="nav">
-        <a href="index.html">Home</a>
-        <a href="about.html">About</a>
-        <a href="operations.html">Operations</a>
-        <a href="team.html">Team</a>
-        <a href="contact.html">Contact</a>
-      </nav>
-    </div>
-  </header>
+  <nav>
+    <h1>CodeUnity</h1>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="mission.html">Mission</a></li>
+      <li><a href="operations.html">Operations</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      <li><a href="team.html">Team</a></li>
+    </ul>
+  </nav>
 
-  <main>
-    <section class="section">
-      <div class="container">
-        <h2>Join Us</h2>
-        <div class="card content">
-          <p>To join, fill out the form below and our board will set up an initial meeting.</p>
+  <section class="page-header fade-in">
+    <h2>Join CodeUnity</h2>
+    <p>
+      Ready to make an impact? Joining CodeUnity means becoming part of a student-led movement that’s shaping the future of technology and collaboration.
+      After you sign up, you’ll set up an initial meeting with our main board to get started.
+    </p>
+  </section>
 
-          <form id="joinForm" class="form" style="margin-top:1rem">
-            <input name="name" type="text" placeholder="Your full name" required>
-            <input name="email" type="email" placeholder="Your email" required>
-            <textarea name="message" placeholder="Tell us about yourself & why you want to join" required></textarea>
-            <button type="submit" class="submit">Request to Join</button>
-          </form>
+  <section class="form-container fade-up">
+    <iframe 
+      src="https://docs.google.com/forms/d/e/1FAIpQLSfGIYHbCLVtbMpZ9m41hjUiTKuhKGgXA1GuOtwmO32xzU1EUA/viewform?embedded=true" 
+      width="100%" height="900" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+  </section>
 
-          <p style="color:var(--muted);margin-top:1rem">By submitting, you agree we can contact you to schedule a meeting.</p>
-        </div>
-      </div>
-    </section>
-
-    <footer class="footer container">
-      <div>© <strong>CodeUnity</strong></div>
-      <div style="color:var(--muted)"><a href="index.html">Home</a></div>
-    </footer>
-  </main>
-
-  <script src="script.js"></script>
+  <footer>
+    <p>© 2025 CodeUnity | Code Together. Grow Together.</p>
+  </footer>
 </body>
 </html>
