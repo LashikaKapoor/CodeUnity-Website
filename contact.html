@@ -1,65 +1,45 @@
-<!doctype html>
+<!-- contact.html -->
+<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Contact — CodeUnity</title>
-  <link rel="stylesheet" href="style.css">
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact | CodeUnity</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="script.js" defer></script>
 </head>
 <body>
-  <header class="header">
-    <div class="container header-inner">
-      <div class="brand" onclick="location.href='index.html'"><div class="logo">CU</div><div><h1>CodeUnity</h1></div></div>
-      <nav class="nav">
-        <a href="index.html">Home</a>
-        <a href="about.html">About</a>
-        <a href="operations.html">Operations</a>
-        <a href="team.html">Team</a>
-        <a href="join.html" class="btn ghost">Join</a>
-      </nav>
-    </div>
-  </header>
+  <nav>
+    <h1>CodeUnity</h1>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="mission.html">Mission</a></li>
+      <li><a href="operations.html">Operations</a></li>
+      <li><a href="join.html">Join</a></li>
+      <li><a href="team.html">Team</a></li>
+    </ul>
+  </nav>
 
-  <main>
-    <section class="section">
-      <div class="container">
-        <h2>Contact Us</h2>
-        <div class="card content">
-          <p>We care deeply about community feedback. Whether you have questions, suggestions, or concerns, we’re here to listen.</p>
+  <section class="page-header fade-in">
+    <h2>Contact Us</h2>
+    <p>
+      We care deeply about our community’s feedback. Whether you have questions, suggestions, or concerns, we’re here to listen. Your voice helps us grow and improve CodeUnity for everyone.
+    </p>
+    <p>
+      <b>Lashika Kapoor:</b> kapoor.lashika@gmail.com — Great for general inquiries or detailed feedback.<br>
+      <b>Sneha Nagarajan:</b> snehaba34@gmail.com
+    </p>
+  </section>
 
-          <div style="display:flex;gap:1rem;flex-wrap:wrap;margin-top:1rem">
-            <div style="flex:1;min-width:220px" class="card">
-              <h4>Lashika Kapoor</h4>
-              <p style="color:var(--muted)">Founder &amp; CEO</p>
-              <p style="color:var(--muted)"><a href="mailto:kapoor.lashika@gmail.com">kapoor.lashika@gmail.com</a></p>
-            </div>
-            <div style="flex:1;min-width:220px" class="card">
-              <h4>Sneha Nagarajan</h4>
-              <p style="color:var(--muted)">Co-Founder</p>
-              <p style="color:var(--muted)"><a href="mailto:snehaba34@gmail.com">snehaba34@gmail.com</a></p>
-            </div>
-          </div>
+  <section class="form-container fade-up">
+    <iframe 
+      src="https://docs.google.com/forms/d/e/1FAIpQLSeW5Z3v_snCanMOShL9SfOhNiNslbWd82aLQzCNLweZVwIO2w/viewform?embedded=true" 
+      width="100%" height="900" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+  </section>
 
-          <form id="contactForm" class="form" style="margin-top:1rem">
-            <input name="name" type="text" placeholder="Your name" required>
-            <input name="email" type="email" placeholder="Your email" required>
-            <textarea name="message" placeholder="How can we help?" required></textarea>
-            <button type="submit" class="submit">Send Message</button>
-          </form>
-
-          <p style="color:var(--muted);margin-top:1rem;font-size:.95rem">Note: the form will send an email to <strong>kapoor.lashika@gmail.com</strong>. To enable automatic sends, replace EmailJS placeholders in <code>script.js</code>.</p>
-        </div>
-      </div>
-    </section>
-
-    <footer class="footer container">
-      <div>© <strong>CodeUnity</strong></div>
-      <div style="color:var(--muted)"><a href="index.html">Home</a></div>
-    </footer>
-  </main>
-
-  <script src="script.js"></script>
+  <footer>
+    <p>© 2025 CodeUnity | Code Together. Grow Together.</p>
+  </footer>
 </body>
 </html>
