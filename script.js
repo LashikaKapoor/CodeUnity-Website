@@ -104,3 +104,19 @@ document.addEventListener('DOMContentLoaded', function(){
   handleFormSubmit('joinForm');
   handleFormSubmit('joinFormInline'); // in case another form id used
 });
+document.addEventListener("DOMContentLoaded", () => {
+  document.body.classList.add("page-loaded");
+});
+
+document.querySelectorAll("a").forEach(link => {
+  link.addEventListener("click", e => {
+    if (link.hostname === window.location.hostname && !link.target) {
+      e.preventDefault();
+      document.body.classList.remove("page-loaded");
+      setTimeout(() => {
+        window.location.href = link.href;
+      }, 300);
+    }
+  });
+});
+
