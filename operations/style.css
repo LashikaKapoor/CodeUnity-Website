@@ -4,6 +4,7 @@
   --card:#0f1720;
   --accent1:#00f0ff;
   --accent2:#ff2bd6;
+  --accent-purple:#9d4edd;
   --muted:#bfc7d4;
   --glass: rgba(255,255,255,0.04);
   --radius: 14px;
@@ -67,8 +68,8 @@ body{
 .cta-row{display:flex;gap:.85rem;align-items:center}
 .btn{
   display:inline-flex;align-items:center;gap:.6rem;padding:.9rem 1.2rem;border-radius:12px;font-weight:700;border:none;cursor:pointer;
-  background:linear-gradient(90deg,var(--accent1),var(--accent2));
-  color:#03131a;box-shadow:var(--accent-glow);transition:all .26s ease;
+  background:linear-gradient(90deg,var(--accent1),var(--accent-purple),var(--accent2));
+  color:#ffffff;box-shadow:var(--accent-glow);transition:all .26s ease;
 }
 .btn.ghost{background:transparent;color:var(--accent1);border:1px solid rgba(255,255,255,0.04)}
 .btn:hover{transform:translateY(-4px)}
@@ -98,7 +99,7 @@ body{
 .form{max-width:640px;margin-top:1rem}
 input,textarea,select{width:100%;padding:.95rem;border-radius:10px;border:none;background:var(--glass);color:#eaf5ff;font-weight:600;margin-bottom:.8rem;outline:none}
 textarea{min-height:140px;resize:vertical}
-.form .submit{display:inline-block;padding:.9rem 1.2rem;border-radius:10px;border:none;background:linear-gradient(90deg,var(--accent1),var(--accent2));color:#021;font-weight:800;cursor:pointer}
+.form .submit{display:inline-block;padding:.9rem 1.2rem;border-radius:10px;border:none;background:linear-gradient(90deg,var(--accent1),var(--accent-purple),var(--accent2));color:#ffffff;font-weight:800;cursor:pointer}
 
 /* footer */
 .footer{padding:2rem 0;margin-top:3rem;border-top:1px solid rgba(255,255,255,0.03);color:var(--muted);font-size:.95rem;display:flex;justify-content:space-between;align-items:center}
