@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Courses — CodeUnity</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+</head>
+<body>
+  <header class="header">
+    <div class="container header-inner">
+      <div class="brand" onclick="location.href='index.html'"><div class="logo">CU</div><div><h1>CodeUnity</h1></div></div>
+      <nav class="nav">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="mission.html">Mission</a>
+        <a href="courses.html">Courses</a>
+        <a href="operations.html">Operations</a>
+        <a href="team.html">Team</a>
+        <a href="join.html" class="btn ghost">Join</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="section">
+      <div class="container">
+        <h2>Our Courses</h2>
+        <div class="card content">
+          <p>Explore our student-led courses designed to help you build real-world coding skills. Each course includes hands-on projects, peer mentorship, and comprehensive learning materials.</p>
+        </div>
+
+        <div style="display:flex;gap:1.5rem;flex-wrap:wrap;margin-top:2rem;justify-content:center">
+          <div class="card" style="flex:1;min-width:320px;max-width:500px">
+            <h3 style="margin-bottom:0.75rem;color:var(--accent1)">Python Fundamentals</h3>
+            <p style="color:var(--muted);margin-bottom:1rem">Learn Python from the ground up with our comprehensive beginner course. Cover variables, data types, loops, functions, and object-oriented programming. Build real projects and gain confidence in coding.</p>
+            <ul style="color:var(--muted);margin-bottom:1rem;font-size:0.95rem">
+              <li>8-week structured curriculum</li>
+              <li>Weekly live Q&A sessions</li>
+              <li>Hands-on coding projects</li>
+              <li>Peer-led learning environment</li>
+            </ul>
+            <a href="#" class="btn" style="display:inline-block;text-decoration:none">Learn More</a>
+          </div>
+
+          <div class="card" style="flex:1;min-width:320px;max-width:500px">
+            <h3 style="margin-bottom:0.75rem;color:var(--accent2)">Web Development</h3>
+            <p style="color:var(--muted);margin-bottom:1rem">Master the essentials of web development with HTML, CSS, and JavaScript. Create responsive websites, understand modern web design principles, and deploy your own projects online.</p>
+            <ul style="color:var(--muted);margin-bottom:1rem;font-size:0.95rem">
+              <li>10-week comprehensive program</li>
+              <li>Build 3+ complete websites</li>
+              <li>Learn responsive design</li>
+              <li>Portfolio development support</li>
+            </ul>
+            <a href="#" class="btn" style="display:inline-block;text-decoration:none">Learn More</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer container">
+      <div>© <strong>CodeUnity</strong></div>
+      <div style="color:var(--muted)"><a href="index.html">Home</a></div>
+    </footer>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
